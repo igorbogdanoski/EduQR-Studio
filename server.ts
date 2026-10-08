@@ -357,6 +357,17 @@ function generateLocalMathQuizResponse(
   };
 }
 
+function getAiClient(apiKey: string) {
+  return new GoogleGenAI({
+    apiKey,
+    httpOptions: {
+      headers: {
+        'User-Agent': 'aistudio-build',
+      },
+    },
+  });
+}
+
 // API Endpoint for Math Quiz Generation
 app.post('/api/ai/math-quiz', async (req, res) => {
   try {
@@ -373,7 +384,7 @@ app.post('/api/ai/math-quiz', async (req, res) => {
       return res.json(generateLocalMathQuizResponse(topic, grade, questionCount, difficulty, language));
     }
 
-    const ai = new GoogleGenAI({});
+    const ai = getAiClient(apiKey);
     const prompt = `Generate a rigorous, curriculum-aligned mathematical quiz for grade "${grade}" on topic "${topic}".
 Difficulty: "${difficulty}".
 Number of questions: exactly ${questionCount}.
@@ -447,7 +458,7 @@ app.post('/api/ai/voice-assistant', async (req, res) => {
       return res.json(generateLocalPedagogicalResponse(prompt, language));
     }
 
-    const ai = new GoogleGenAI({});
+    const ai = getAiClient(apiKey);
     const systemInstruction = `You are an expert pedagogical assistant for Macedonian STEM educators in EduQR Studio.
 The teacher spoke to you in ${language === 'mk' ? 'Macedonian' : language === 'sq' ? 'Albanian' : 'English'}.
 Understand their voice prompt and respond with structured educational content.
