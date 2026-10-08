@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="45%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Позадина -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Декоративни сјајни кругови во позадина -->
+  <circle cx="1050" cy="120" r="320" fill="#4f46e5" opacity="0.18" filter="blur(60px)" />
+  <circle cx="150" cy="500" r="280" fill="#7c3aed" opacity="0.15" filter="blur(60px)" />
+
+  <!-- Лева содржина: Наслов и опис -->
+  <g transform="translate(80, 80)">
+    
+    <!-- Беџ: Основно & Средно образование -->
+    <rect x="0" y="0" width="380" height="40" rx="20" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.5" />
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="14" fill="#a5b4fc">
+      🎓 ЗА ОСНОВНО &amp; СРЕДНО ОБРАЗОВАНИЕ
+    </text>
+
+    <!-- Главен наслов -->
+    <text x="0" y="115" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="56" fill="#ffffff" letter-spacing="-1">
+      ЕдуQR Студио
+    </text>
+
+    <!-- Поднаслов со градиент -->
+    <text x="0" y="170" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="30" fill="url(#brandGrad)">
+      Интерактивни Образовни QR Кодови
+    </text>
+
+    <!-- Описен параграф -->
+    <text x="0" y="235" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="20" fill="#cbd5e1">
+      Креирајте дигитални наставни листови со KaTeX формули,
+    </text>
+    <text x="0" y="270" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="20" fill="#cbd5e1">
+      скалирање по Виготски (ZPD), PDF документи и брз извоз
+    </text>
+    <text x="0" y="305" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="20" fill="#cbd5e1">
+      во PNG и SVG за PowerPoint &amp; Google Slides презентации.
+    </text>
+
+    <!-- Карактеристики / Предмети беџови -->
+    <g transform="translate(0, 360)">
+      <!-- Математика -->
+      <rect x="0" y="0" width="135" height="42" rx="14" fill="rgba(79, 70, 229, 0.25)" stroke="#6366f1" stroke-width="1.5" />
+      <text x="20" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#e0e7ff">📐 Математика</text>
+
+      <!-- Физика -->
+      <rect x="150" y="0" width="115" height="42" rx="14" fill="rgba(2, 132, 199, 0.25)" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="170" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#e0f2fe">⚡ Физика</text>
+
+      <!-- Хемија -->
+      <rect x="280" y="0" width="115" height="42" rx="14" fill="rgba(225, 29, 72, 0.25)" stroke="#fb7185" stroke-width="1.5" />
+      <text x="300" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#ffe4e6">🧪 Хемија</text>
+
+      <!-- Информатика -->
+      <rect x="410" y="0" width="145" height="42" rx="14" fill="rgba(13, 148, 136, 0.25)" stroke="#2dd4bf" stroke-width="1.5" />
+      <text x="430" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#ccfbf1">💻 Информатика</text>
+    </g>
+  </g>
+
+  <!-- Десна содржина: Визуелна QR Картичка и формула -->
+  <g transform="translate(740, 95)" filter="url(#shadow)">
+    <!-- Бела картичка -->
+    <rect width="380" height="440" rx="32" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="2" />
+
+    <!-- Заглавие на картичката -->
+    <rect x="24" y="24" width="70" height="28" rx="8" fill="#e0e7ff" />
+    <text x="36" y="43" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" fill="#4338ca">8-мо одд.</text>
+
+    <text x="105" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#0f172a">Питагорова теорема</text>
+
+    <!-- Формула кутија -->
+    <rect x="24" y="68" width="332" height="52" rx="14" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="190" y="101" font-family="'Times New Roman', Cambria, serif" font-weight="bold" font-style="italic" font-size="20" fill="#1e293b" text-anchor="middle">
+      c² = a² + b² ⟹ c = 10 cm
+    </text>
+
+    <!-- Голем QR код -->
+    <g transform="translate(65, 140)">
+      <rect width="250" height="250" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+      
+      <!-- Finder 1 -->
+      <rect x="20" y="20" width="60" height="60" rx="12" fill="#1e1b4b" />
+      <rect x="30" y="30" width="40" height="40" rx="8" fill="#ffffff" />
+      <rect x="40" y="40" width="20" height="20" rx="4" fill="#1e1b4b" />
+
+      <!-- Finder 2 -->
+      <rect x="170" y="20" width="60" height="60" rx="12" fill="#1e1b4b" />
+      <rect x="180" y="30" width="40" height="40" rx="8" fill="#ffffff" />
+      <rect x="190" y="40" width="20" height="20" rx="4" fill="#1e1b4b" />
+
+      <!-- Finder 3 -->
+      <rect x="20" y="170" width="60" height="60" rx="12" fill="#1e1b4b" />
+      <rect x="30" y="180" width="40" height="40" rx="8" fill="#ffffff" />
+      <rect x="40" y="190" width="20" height="20" rx="4" fill="#1e1b4b" />
+
+      <!-- Централна икона ∑ -->
+      <circle cx="125" cy="125" r="26" fill="#4f46e5" stroke="#ffffff" stroke-width="4" />
+      <text x="125" y="133" font-family="'Times New Roman', serif" font-style="italic" font-weight="900" font-size="24" fill="#ffffff" text-anchor="middle">∑</text>
+
+      <!-- Декоративни QR пиксели -->
+      <rect x="100" y="30" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="130" y="30" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="100" y="60" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="30" y="100" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="60" y="100" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="30" y="130" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="170" y="100" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="200" y="100" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="170" y="130" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="200" y="130" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="100" y="170" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="130" y="170" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="100" y="200" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="130" y="200" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="170" y="170" width="16" height="16" rx="3" fill="#1e1b4b" />
+      <rect x="200" y="200" width="16" height="16" rx="3" fill="#1e1b4b" />
+    </g>
+
+    <!-- Долна ознака -->
+    <text x="190" y="415" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#64748b" text-anchor="middle">
+      Скенирајте со телефон или таблет
+    </text>
+  </g>
+</svg>

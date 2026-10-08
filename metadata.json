@@ -1,0 +1,8 @@
+{
+  "name": "Remix ЕдуQR Студио - Образовни QR Кодови и Математички LaTeX",
+  "description": "Напредна образовна платформа за наставници за генерирање интерактивни QR кодови со вграден LaTeX, скратувач на линкови и педагошки рамки на Виготски, Блум и Гарднер.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
