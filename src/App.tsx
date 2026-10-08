@@ -642,6 +642,7 @@ export default function App() {
         onOpenAnalyticsModal={() => setIsAnalyticsOpen(true)}
         onOpenVoiceAssistant={() => setIsVoiceAssistantOpen(true)}
         onOpenTestingGuide={() => setIsTestingGuideOpen(true)}
+        onOpenMathQuiz={() => setIsMathQuizOpen(true)}
       />
 
       <main className="grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 w-full space-y-5">
@@ -710,6 +711,16 @@ export default function App() {
                   >
                     <Compass className="w-3.5 h-3.5 text-slate-900" />
                     <span>{language === 'mk' ? 'QR Лов (Станици)' : 'Scavenger Hunt'}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setIsMathQuizOpen(true)}
+                    className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-xs cursor-pointer"
+                    title="Генерирај математички квиз со соодветен QR клуч со решенија"
+                  >
+                    <FileQuestion className="w-3.5 h-3.5 text-emerald-200" />
+                    <span>{language === 'mk' ? 'Математички Квиз' : 'Math Quiz'}</span>
                   </button>
 
                   <button

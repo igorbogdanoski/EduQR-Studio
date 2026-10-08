@@ -12,7 +12,8 @@ import {
   HelpCircle,
   Upload,
   MoreVertical,
-  ChevronDown
+  ChevronDown,
+  FileQuestion
 } from 'lucide-react';
 
 export type FontSizeOption = 'normal' | 'large' | 'huge';
@@ -29,6 +30,7 @@ interface NavbarProps {
   onOpenAnalyticsModal: () => void;
   onOpenVoiceAssistant: () => void;
   onOpenTestingGuide?: () => void;
+  onOpenMathQuiz?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -42,7 +44,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenArchitectureModal,
   onOpenAnalyticsModal,
   onOpenVoiceAssistant,
-  onOpenTestingGuide
+  onOpenTestingGuide,
+  onOpenMathQuiz
 }) => {
   const t = translations[language];
   const [isToolsDropdownOpen, setIsToolsDropdownOpen] = useState(false);
@@ -194,6 +197,21 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <Mic className="w-4 h-4 text-indigo-600" />
                   <span>{language === 'mk' ? 'Гласовен AI (Говор)' : 'Voice AI Assistant'}</span>
                 </button>
+
+                {/* Математички квиз & Клуч со решенија */}
+                {onOpenMathQuiz && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsToolsDropdownOpen(false);
+                      onOpenMathQuiz();
+                    }}
+                    className="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-emerald-900 bg-emerald-50/70 hover:bg-emerald-100 transition text-left cursor-pointer font-bold"
+                  >
+                    <FileQuestion className="w-4 h-4 text-emerald-600" />
+                    <span>{language === 'mk' ? 'Математички Квиз & Клуч' : 'Math Quiz & Answer Key'}</span>
+                  </button>
+                )}
 
                 {/* Аналитика */}
                 <button
